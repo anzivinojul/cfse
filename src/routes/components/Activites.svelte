@@ -35,9 +35,7 @@
 
 </section>
 
-<style lang="scss">
-
-    @import '../../app.scss';
+<style global lang="scss">
 
     .container-activities {
         width: 100%;

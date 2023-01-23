@@ -40,9 +40,7 @@
 
 </section>
 
-<style lang="scss">
-
-    @import '../../app.scss';
+<style global lang="scss">
 
     .container-mission {
         width: 100%;

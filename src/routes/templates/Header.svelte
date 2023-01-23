@@ -26,9 +26,7 @@
 
 </header>
 
-<style lang="scss">
-
-    @import '../../app.scss';
+<style global lang="scss">
 
     .top-header {
         background-color: $primary;

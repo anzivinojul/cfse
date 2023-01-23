@@ -46,9 +46,7 @@
 
 </section>
 
-<style lang="scss">
-
-    @import '../../app.scss';
+<style global lang="scss">
 
     .container-values {
         width: 100%;

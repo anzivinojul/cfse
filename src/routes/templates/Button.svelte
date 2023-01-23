@@ -4,9 +4,7 @@
     export let textButton:string
 </script>
 
-<style lang="scss">
-
-    @import '../../app.scss';
+<style global lang="scss">
 
     .btn {
         display: flex;

@@ -4,8 +4,8 @@
     import Mission from "./components/Mission.svelte";
     import Values from "./components/Values.svelte";
     import Header from "./templates/Header.svelte";
-
 </script>
+
 <Header />
 <Landing />
 <Activites />
@@ -17,9 +17,7 @@
 </main>
 
 
-<style lang="scss">
-
-    @import './../app.scss';
+<style global lang="scss">
     
     #next {
         display: flex;

@@ -77,9 +77,7 @@
 
 </main>
 
-<style lang="scss">
-
-    @import '../../app.scss';
+<style global lang="scss">
 
     .container-landing {
         width: 100%;
