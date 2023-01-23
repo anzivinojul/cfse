@@ -94,7 +94,7 @@
             top: -10%;
             left: 0;
             z-index: -100;
-            background: url(images/backgroundWave.svg) no-repeat center center fixed; 
+            background: url(/images/backgroundWave.svg) no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
