@@ -19,7 +19,7 @@
 
         </div>
 
-        <Button textButton="Nous contacter" />
+        <Button textButton="Nous contacter"/>
 
     </div>
 
@@ -58,7 +58,8 @@
 
             .img-header {
                 width: 75px;
-                height: 61px;
+                height: auto;
+                transition: .4s;
 
                 &:hover {
                     cursor: pointer;
@@ -71,7 +72,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: space(6);
+            gap: space(5);
 
             .list-right-header {
                 display: flex;
@@ -96,6 +97,7 @@
                     background-position: 100%;
                     transition: background-position 275ms ease;
                     text-decoration: none; // text decorations are clipped in WebKit browsers
+                    transition: .4s;
                     
                     &:hover {
                         cursor: pointer;
@@ -105,6 +107,51 @@
                 }
             }
         }
+    }
+
+    @media screen and (max-width: $xl) {
+
+        .top-header {
+            padding-top: 15px;
+        }
+        
+        #header {
+            height: 70px;
+            padding: 0 space(3) 0 space(3);
+
+            .left-header {
+
+                .img-header {
+                    width: 60px;
+                }
+            }
+
+            .right-header {
+                gap: space(3);
+
+                .list-right-header {
+                    gap: space(3);
+                    font-size: 1.05em;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $m) {
+
+
+
+        #header {
+
+            .right-header {
+
+                .list-right-header {
+
+                    display: none!important;
+                }
+            }
+        }
+
     }
 
 </style>

@@ -91,7 +91,8 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            top: -10%;
+            min-height: 590px;
+            top: -8vh;
             left: 0;
             z-index: -100;
             background: url(/images/backgroundWave.svg) no-repeat center center fixed; 
@@ -100,22 +101,22 @@
             -o-background-size: cover;
             background-size: cover;
             background-attachment: scroll;
+            transition: .4s ease;
         }
 
         .container-hero {
             position: relative;
             width: 100%;
             height: calc(100vh - 130px);
-            min-width: 750px;
-            min-height: 490px;
+            min-height: 590px;
             display: flex;
             flex-direction: column;
-            gap: space(8);
 
             .container-hero-top {
                 display: flex;
                 flex-direction: row;
                 flex: 6;
+                transition: .4s ease;
 
                 .container-hero-top-left {
                     display: flex;
@@ -124,8 +125,8 @@
                     flex: 7;
 
                     .hero-img {
-                        width: 400px;
-                        height: 400px;
+                        width: 35%;
+                        height: auto;
                     }
                 }
 
@@ -134,6 +135,8 @@
                     flex-direction: column;
                     flex: 5;
                     justify-content: space-around;
+                    height: 100%;
+                    gap: space(2);
 
                     .hero-title {
                         font-family: $font_opensans;
@@ -162,7 +165,7 @@
                 flex: 4;
 
                 .container-hero-points {
-                    min-height: 100%;
+                    height: 100%;
                     width: 100%;
                     display: flex;
                     flex-direction: row;
@@ -173,8 +176,9 @@
                         height: 100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-evenly;
+                        justify-content: center;
                         align-items: center;
+                        gap: space(4);
 
                         .hero-point-title {
                             font-family: $font_montserrat;
@@ -197,6 +201,257 @@
         }
 
     }
+
+    @media screen and (max-width: 1500px) {
+
+        .container-landing {
+
+            .container-hero {
+
+                .container-hero-top {
+                    flex: 5;
+
+                    .container-hero-top-left {
+                        flex: 1;
+
+                        .hero-img {
+                            width: 45%;
+                        }
+                    }
+
+                    .container-hero-top-right {
+                        flex: 1;
+
+                        .hero-title {
+                            font-size: 2.8em;
+                        }
+
+                        .hero-description {
+                            font-size: 1em;
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .container-hero-bottom {
+                    flex: 5;
+
+                    .container-hero-points {
+
+                        .hero-point {
+
+                            .hero-point-title {
+                                font-size: 1.6em;
+                            }
+
+                            .hero-point-text {
+                                font-size: 1em;
+                                width: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $xxl) {
+
+        .container-landing {
+
+            .container-hero {
+
+                .container-hero-top {
+                    justify-content: center;
+                    align-items: center;
+                    gap: space(4);
+
+                    .container-hero-top-left {
+                        flex: 1.5;
+
+                        .hero-img {
+                            width: 55%;
+                        }
+                    }
+
+                    .container-hero-top-right {
+                        flex: 2;
+                        justify-content: space-evenly;
+
+                        .hero-title {
+                            font-size: 2.2em;
+                        }
+
+                        .hero-description {
+                            font-size: 0.9em;
+                            width: 90%;
+                        }
+                    }
+                }
+
+                .container-hero-bottom {
+                    
+                    .container-hero-points {
+
+                        .hero-point {
+
+                            .hero-point-title {
+                                font-size: 1.4em;
+                            }
+
+                            .hero-point-text {
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $xl) {
+
+        .container-landing {
+
+            .container-hero {
+
+                .container-hero-top {
+
+                    .container-hero-top-left {
+
+                        .hero-img {
+                            width: 60%;
+                        }
+                    }
+
+                    .container-hero-top-right {
+
+                        .hero-title {
+                            font-size: 1.8em;
+                        }
+
+                    }
+                }
+
+                .container-hero-bottom {
+                    
+                    .container-hero-points {
+
+                        .hero-point {
+
+                            .hero-point-title {
+                                font-size: 1.2em;
+                            }
+
+                            .hero-point-text {
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $l) {
+
+        .container-landing {
+            max-height: auto;
+
+            .background-landing {
+                top: -10vh;
+            }
+
+            .container-hero {
+                max-height: auto;
+                gap: 6vh;
+
+                .container-hero-top {
+                    padding-left: space(4);
+                    padding-right: space(4);
+                    padding-top: 3vh;
+
+                    .container-hero-top-left {
+                        display: none;
+
+                        .hero-img {
+                            width: 80%;
+                        }
+                    }
+
+                    .container-hero-top-right {
+                        flex: none;
+                        width: 100%;
+
+                        .hero-description {
+                            width: 100%;
+                        }
+                        
+                    }
+                }
+
+                .container-hero-bottom {
+                    padding-bottom: 3vh;
+                    
+                    .container-hero-points {
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .hero-point {
+                            gap: space(1);
+
+                            .hero-point-title {
+                                font-size: 1.1em;
+                            }
+
+                            .hero-point-text {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $m) {
+
+        .container-landing {
+            
+            .container-hero {
+
+                .container-hero-top {
+
+                    .container-hero-top-right {
+
+                        .hero-description {
+                            font-size: 0.85em;
+                        }
+                        
+                    }
+                }
+
+                .container-hero-bottom {
+                    
+                    .container-hero-points {
+
+                        .hero-point {
+
+                            .hero-point-title {
+                                font-size: 1em;
+                            }
+
+                            .hero-point-text {
+                                font-size: 0.75em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 </style>
 
 <script lang=ts>

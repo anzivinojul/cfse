@@ -29,4 +29,13 @@
         }
     
     }
+
+    @media screen and (max-width: $xl) {
+        .btn {
+            height: 35px;
+            font-size: 0.9em;
+            padding: 0 space(2);
+        }
+    }
+
 </style>

@@ -8,9 +8,11 @@
 
 <Header />
 <Landing />
-<Activites />
-<Mission />
-<Values />
+<!--
+    <Activites />
+    <Mission />
+    <Values />
+-->
 <main id="next">
     <h2>IN PROGRESS</h2>
     
