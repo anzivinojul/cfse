@@ -90,9 +90,9 @@
         .background-landing {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: calc(100vh - 130px);
             min-height: 590px;
-            top: -8vh;
+            top: -65px;
             left: 0;
             z-index: -100;
             background: url(/images/backgroundWave.svg) no-repeat center center fixed; 
@@ -108,7 +108,7 @@
             position: relative;
             width: 100%;
             height: calc(100vh - 130px);
-            min-height: 590px;
+            min-height: 720px;
             display: flex;
             flex-direction: column;
 
@@ -136,6 +136,7 @@
                     flex: 5;
                     justify-content: space-around;
                     height: 100%;
+                    padding: space(4) 0 space(4) 0;
                     gap: space(2);
 
                     .hero-title {
@@ -209,10 +210,9 @@
             .container-hero {
 
                 .container-hero-top {
-                    flex: 5;
 
                     .container-hero-top-left {
-                        flex: 1;
+                        flex: 1.5;
 
                         .hero-img {
                             width: 45%;
@@ -220,7 +220,7 @@
                     }
 
                     .container-hero-top-right {
-                        flex: 1;
+                        flex: 2;
 
                         .hero-title {
                             font-size: 2.8em;
@@ -234,7 +234,6 @@
                 }
 
                 .container-hero-bottom {
-                    flex: 5;
 
                     .container-hero-points {
 
@@ -258,6 +257,10 @@
     @media screen and (max-width: $xxl) {
 
         .container-landing {
+
+            .background-landing {
+                top: -50px;
+            }
 
             .container-hero {
 
@@ -312,8 +315,15 @@
     @media screen and (max-width: $xl) {
 
         .container-landing {
+            min-height: calc(100vh - 85px);
+
+            .background-landing {
+                min-height: calc(100vh - 85px);
+                top: -42px;
+            }
 
             .container-hero {
+                min-height: calc(100vh - 85px);
 
                 .container-hero-top {
 
@@ -356,14 +366,12 @@
     @media screen and (max-width: $l) {
 
         .container-landing {
-            max-height: auto;
 
             .background-landing {
-                top: -10vh;
+                
             }
 
             .container-hero {
-                max-height: auto;
                 gap: 6vh;
 
                 .container-hero-top {
@@ -417,12 +425,20 @@
     @media screen and (max-width: $m) {
 
         .container-landing {
+            min-height: calc(110vh - 85px);
+
+            .background-landing {
+                height: calc(110vh - 85px);
+            }
             
             .container-hero {
+                height: calc(110vh - 85px);
 
                 .container-hero-top {
+                    padding-top: 0vh;
 
                     .container-hero-top-right {
+                        padding: 0;
 
                         .hero-description {
                             font-size: 0.85em;
@@ -450,6 +466,21 @@
             }
         }
     }
+
+    @media screen and (max-width: $s) {
+
+        .container-landing {
+            min-height: calc(150vh - 85px);
+
+            .background-landing {
+                height: calc(150vh - 85px);
+            }
+            
+            .container-hero {
+                height: calc(150vh - 85px);
+            }
+        }
+    }   
 
 
 </style>
