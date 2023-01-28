@@ -39,20 +39,19 @@
 
     .container-activities {
         width: 100%;
-        height: 100vh;
-        min-height: 100vh;
+        height: calc(100vh - 100px);
+        min-height: 590px;
         position: relative;
         display: flex;
         flex-direction: column;
-        padding-top: 100px;
 
         .activities-title {
 
             font-family: $font_opensans;
             font-size: 2.8em;
             color: $text;
-            padding-top: 20px;
-            padding-left: 65px;
+            padding-top: 2vh;
+            padding-left: 4vw;
 
             #title_firstline {
                 font-weight: 500;
@@ -80,9 +79,10 @@
                 padding-right: space(6);
 
                 .activities-img {
-                    width: 400px;
-                    height: 400px;
+                    width: 80%;
+                    height: 80%;
                 }
+
                 .activities-text {
                     font-family: $font_montserrat;
                     font-weight: bold;
@@ -94,4 +94,133 @@
         }
 
     }
+
+    @media screen and (max-width: 1500px) {
+
+        .container-activities {
+
+            .activities-title {
+
+                font-size: 2.4em;
+
+            }
+
+            .activities-list {
+
+                .activities-card {
+
+                    .activities-text {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: $xxl) {
+
+        .container-activities {
+
+            height: auto;
+            padding-top: 100px;
+
+            .activities-title {
+
+                font-size: 2.2em;
+
+            }
+
+            .activities-list {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                .activities-card {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex: 1;
+
+                    .activities-img {
+                        width: 40%;
+                        min-width: 250px;
+                        height: auto;
+                    }
+
+                    .activities-text {
+                        justify-self: center;
+                        padding: 0 space(4) 0 space(4);
+                        width: 80%;
+                        font-size: 1.3em;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $l) {
+
+        .container-activities {
+
+            padding-top: 70px;
+
+
+            .activities-title {
+
+                font-size: 2em;
+
+            }
+
+            .activities-list {
+
+                .activities-card {
+                    padding-left: space(2);
+                    padding-right: space(2);
+
+                    .activities-img {
+                        min-width: 250px;
+                    }
+
+                    .activities-text {
+                        padding: 0 space(2) 0 space(2);
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $m) {
+
+        .container-activities {
+
+            .activities-title {
+
+                font-size: 1.8em;
+
+            }
+
+            .activities-list {
+
+                .activities-card {
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    .activities-img {
+                        min-width: 200px;
+                    }
+
+                    .activities-text {
+                        padding: 0 space(1) 0 space(1);
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+
 </style>

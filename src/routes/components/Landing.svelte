@@ -81,7 +81,8 @@
 
     .container-landing {
         width: 100%;
-        min-height: calc(100vh - 130px);
+        height: calc(100vh - 130px);
+        min-height: 590px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -101,14 +102,13 @@
             -o-background-size: cover;
             background-size: cover;
             background-attachment: scroll;
-            transition: .4s ease;
         }
 
         .container-hero {
             position: relative;
             width: 100%;
             height: calc(100vh - 130px);
-            min-height: 720px;
+            min-height: 590px;
             display: flex;
             flex-direction: column;
 
@@ -315,15 +315,15 @@
     @media screen and (max-width: $xl) {
 
         .container-landing {
-            min-height: calc(100vh - 85px);
+            height: calc(100vh - 85px);
 
             .background-landing {
-                min-height: calc(100vh - 85px);
+                height: calc(100vh - 85px);
                 top: -42px;
             }
 
             .container-hero {
-                min-height: calc(100vh - 85px);
+                height: calc(100vh - 85px);
 
                 .container-hero-top {
 
@@ -366,10 +366,6 @@
     @media screen and (max-width: $l) {
 
         .container-landing {
-
-            .background-landing {
-                
-            }
 
             .container-hero {
                 gap: 6vh;
@@ -425,7 +421,7 @@
     @media screen and (max-width: $m) {
 
         .container-landing {
-            min-height: calc(110vh - 85px);
+            height: calc(110vh - 85px);
 
             .background-landing {
                 height: calc(110vh - 85px);
@@ -470,7 +466,7 @@
     @media screen and (max-width: $s) {
 
         .container-landing {
-            min-height: calc(150vh - 85px);
+            height: calc(150vh - 85px);
 
             .background-landing {
                 height: calc(150vh - 85px);

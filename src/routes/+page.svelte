@@ -8,8 +8,8 @@
 
 <Header />
 <Landing />
+<Activites />
 <!--
-    <Activites />
     <Mission />
     <Values />
 -->
