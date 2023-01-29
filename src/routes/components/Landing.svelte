@@ -142,7 +142,7 @@
                     .hero-title {
                         font-family: $font_opensans;
                         font-size: 3.4em;
-                        font-weight: bold;
+                        font-weight: 800;
                         color: $background; 
                     }
 

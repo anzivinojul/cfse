@@ -9,8 +9,8 @@
 <Header />
 <Landing />
 <Activites />
+<Mission />
 <!--
-    <Mission />
     <Values />
 -->
 <main id="next">
