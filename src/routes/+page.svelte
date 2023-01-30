@@ -10,9 +10,8 @@
 <Landing />
 <Activites />
 <Mission />
-<!--
-    <Values />
--->
+<Values />
+
 <main id="next">
     <h2>IN PROGRESS</h2>
     

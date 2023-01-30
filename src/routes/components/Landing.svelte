@@ -183,7 +183,7 @@
 
                         .hero-point-title {
                             font-family: $font_montserrat;
-                            font-size: 1.8em;
+                            font-size: 1.6em;
                             font-weight: bold;
                             color: $text;
                         }
@@ -191,7 +191,7 @@
                         .hero-point-text {
                             width: 80%;
                             font-family: $font_montserrat;
-                            font-size: 1.1em;
+                            font-size: 1em;
                             font-weight: bold;
                             text-align: center;
                             color: $text;
@@ -239,12 +239,7 @@
 
                         .hero-point {
 
-                            .hero-point-title {
-                                font-size: 1.6em;
-                            }
-
                             .hero-point-text {
-                                font-size: 1em;
                                 width: 75%;
                             }
                         }

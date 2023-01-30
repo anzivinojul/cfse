@@ -50,20 +50,19 @@
 
     .container-values {
         width: 100%;
-        height: 100vh;
-        min-height: 100vh;
+        min-height: calc(100vh - 100px);
+        height: auto;
         position: relative;
         display: flex;
         flex-direction: column;
-        padding-top: 100px;
 
         .values-title {
 
             font-family: $font_opensans;
             font-size: 2.8em;
             color: $text;
-            padding-top: 20px;
-            padding-left: 65px;
+            padding-top: 2vh;
+            padding-left: 4vw;
 
             #title_firstline {
                 font-weight: 500;
@@ -82,6 +81,7 @@
             align-items: center;
             width: 100%;
             height: 100%;
+            padding: space(8) 0 space(8) 0;
 
             .values-list {
                 display: flex;
@@ -93,11 +93,13 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: space(2);
+                    gap: space(1);
+                    width: 12vw;
 
                     .values-img {
                         height: auto;
-                        width: 250px;
+                        width: 100%;
+                        min-width: 200px;
                     }
 
                     .values-text {
@@ -112,5 +114,111 @@
             
         }
 
+    }
+
+    @media screen and (max-width: 1500px) {
+
+        .container-values {
+
+            .values-title {
+                font-size: 2.4em;
+            }
+
+            .values-hero {
+
+                .values-list {
+
+                    .values-card {
+
+                        .values-text {
+                            font-size: 1.6em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $xxl) {
+
+        .container-values {
+
+            height: auto;
+            padding-top: 100px;
+
+            .values-title {
+
+                font-size: 2.2em;
+
+            }
+
+            .values-hero {
+
+                .values-list {
+
+                    .values-card {
+
+                        .values-text {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $l) {
+
+        .container-values {
+
+            padding-top: 70px;
+
+
+            .values-title {
+
+                font-size: 2em;
+
+            }
+
+            .values-hero {
+
+                .values-list {
+
+                    .values-card {
+
+                        .values-text {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: $m) {
+
+        .container-activities {
+
+            .values-title {
+
+                font-size: 1.8em;
+
+            }
+
+            .values-hero {
+
+                .values-list {
+
+                    .values-card {
+
+                        .values-text {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 </style>

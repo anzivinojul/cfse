@@ -92,7 +92,7 @@
                 .mission-img {
                     width: 80%;
                     height: auto;
-                    min-height: 400px;
+                    min-width: 400px;
                 }
             }
 
