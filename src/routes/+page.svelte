@@ -2,6 +2,7 @@
     import Activites from "./components/Activites.svelte";
     import Landing from "./components/Landing.svelte";
     import Mission from "./components/Mission.svelte";
+    import Pricing from "./components/Pricing.svelte";
     import Values from "./components/Values.svelte";
     import Header from "./templates/Header.svelte";
 </script>
@@ -11,6 +12,7 @@
 <Activites />
 <Mission />
 <Values />
+<Pricing />
 
 <main id="next">
     <h2>IN PROGRESS</h2>

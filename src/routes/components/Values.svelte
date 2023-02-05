@@ -1,7 +1,7 @@
 <section class="container-values">
 
     <h3 class="values-title">
-        <span id="title_firstline">La valeurs de<br></span>
+        <span id="title_firstline">Les valeurs de<br></span>
         <span id="title_secondline">Confiance & Sérénité</span>
     </h3>
 
@@ -79,6 +79,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            justify-self: center;
             width: 100%;
             height: 100%;
             padding: space(8) 0 space(8) 0;
@@ -87,19 +88,18 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: space(16);
+                gap: 6vw;
 
                 .values-card {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: space(1);
-                    width: 12vw;
 
                     .values-img {
                         height: auto;
                         width: 100%;
-                        min-width: 200px;
+                        min-width: 250px;
                     }
 
                     .values-text {
@@ -120,6 +120,9 @@
 
         .container-values {
 
+            min-height: auto;
+            padding-top: 100px;
+
             .values-title {
                 font-size: 2.4em;
             }
@@ -129,6 +132,10 @@
                 .values-list {
 
                     .values-card {
+                        
+                        .values-img {
+                            min-width: 230px;
+                        }
 
                         .values-text {
                             font-size: 1.6em;
@@ -142,9 +149,6 @@
     @media screen and (max-width: $xxl) {
 
         .container-values {
-
-            height: auto;
-            padding-top: 100px;
 
             .values-title {
 
@@ -183,11 +187,16 @@
             .values-hero {
 
                 .values-list {
+                    gap: 0px;
 
                     .values-card {
 
+                        .values-img {
+                            min-width: 40vw;
+                        }
+
                         .values-text {
-                            font-size: 1.4em;
+                            font-size: 1.2em;
                         }
                     }
                 }
@@ -213,7 +222,7 @@
                     .values-card {
 
                         .values-text {
-                            font-size: 1.2em;
+                            font-size: 1.1em;
                         }
                     }
                 }
@@ -221,4 +230,31 @@
 
         }
     }
+
+    @media screen and (max-width: $s) {
+
+        .container-activities {
+
+            .values-title {
+
+                font-size: 1.8em;
+
+            }
+
+            .values-hero {
+
+                .values-list {
+
+                    .values-card {
+
+                        .values-text {
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    
 </style>
