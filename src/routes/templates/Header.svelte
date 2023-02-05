@@ -5,17 +5,17 @@
 <header id="header" class:sticky={stickyClass === true}>
 
     <div class="left-header">
-        <img src="/images/logoCFSE.png" alt="logo" class="img-header">
+        <img src="/images/logoCFSE.png" alt="logo" class="img-header" on:click={goLanding} on:keypress={goLanding}>
     </div>
 
     <div class="right-header">
 
         <div class="list-right-header">
 
-            <a id="activities-header">Activités</a>
-            <a id="mission-header">Mission</a>
-            <a id="values-header">Valeurs</a>
-            <a id="pricings-header">Tarifs</a>
+            <a id="activities-header" on:click={goTo('.container-activities')} on:keypress={goTo('.container-activities')}>Activités</a>
+            <a id="mission-header" on:click={goTo('.container-mission')} on:keypress={goTo('.container-mission')}>Mission</a>
+            <a id="values-header" on:click={goTo('.container-values')} on:keypress={goTo('.container-values')}>Valeurs</a>
+            <a id="pricings-header" on:click={goTo('.container-pricing')} on:keypress={goTo('.container-pricing')}>Tarifs</a>
 
         </div>
 
@@ -96,7 +96,7 @@
                     background-size: 200% 100%;
                     background-position: 100%;
                     transition: background-position 275ms ease;
-                    text-decoration: none; // text decorations are clipped in WebKit browsers
+                    text-decoration: none;
                     transition: .4s;
                     
                     &:hover {
@@ -162,7 +162,7 @@
     let scrollY: number;
     let stickyClass: boolean = false;
 
-    function checkIfSticky() {   
+    function checkIfSticky(): void {   
 
         if(scrollY > 30) {
             stickyClass = true;
@@ -171,6 +171,36 @@
             stickyClass = false;
         }
         
+    }
+
+    function goLanding(): void {
+        window.scrollTo(
+            {
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            }
+        );
+    }
+
+    function getHeaderHeight(): number {
+        const header = document.querySelector('#header');
+        const height = header!.getBoundingClientRect().height;
+
+        return height;
+    }
+
+    const goTo = (container: string) => () => {
+        const containerDOM = document.querySelector(container);
+        const height = (containerDOM!.getBoundingClientRect().top + window.scrollY) - getHeaderHeight();
+
+        window.scrollTo(
+            {
+                top: height,
+                left: 0,
+                behavior: "smooth"
+            }
+        );
     }
 
 </script>

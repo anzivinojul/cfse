@@ -87,7 +87,7 @@
                 différence entre le montant de la facture et le montant de l’aide perçue.
             </p><br>
             <p>
-                <a href="https://www.impots.gouv.fr/particulier/emploi-domicile" target="_blank">https://www.impots.gouv.fr/particulier/emploi-domicile</a> 
+                <a href="https://www.impots.gouv.fr/particulier/emploi-domicile" target="_blank" rel="noreferrer">https://www.impots.gouv.fr/particulier/emploi-domicile</a> 
             </p>
         </div>
 
@@ -145,7 +145,7 @@
             .pricing-hero-bottom {
 
                 .pricing-text {
-                    font-family: $font_opensans;
+                    font-family: $font_montserrat;
                     font-weight: 400;
                     font-size: 1em;
                     color: $text;
@@ -171,7 +171,7 @@
             font-family: $font_opensans;
             font-size: 2.8em;
             color: $text;
-            font-weight: 500;
+            font-weight: 600;
             padding-left: 4vw;
         }
 
@@ -262,9 +262,14 @@
 
             .pricing-hero {
                 width: 90%;
-            }
-        
 
+                .pricing-hero-bottom {
+
+                    .pricing-text {
+                        font-size: 0.9em;
+                    }
+                }
+            }
         }
 
         .container-pricing-advantages {

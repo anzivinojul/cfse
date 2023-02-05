@@ -1,7 +1,28 @@
-<button class="btn">{textButton}</button>
+<button class="btn" on:click={goTo('.container-contact')} on:keypress={goTo('.container-contact')}>{textButton}</button>
 
 <script lang="ts">
     export let textButton:string
+
+    function getHeaderHeight(): number {
+        const header = document.querySelector('#header');
+        const height = header!.getBoundingClientRect().height;
+
+        return height;
+    }
+
+    const goTo = (container: string) => () => {
+        const containerDOM = document.querySelector(container);
+        const height = (containerDOM!.getBoundingClientRect().top + window.scrollY) - getHeaderHeight();
+
+        window.scrollTo(
+            {
+                top: height,
+                left: 0,
+                behavior: "smooth"
+            }
+        );
+    }
+
 </script>
 
 <style global lang="scss">
