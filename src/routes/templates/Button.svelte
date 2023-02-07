@@ -42,11 +42,12 @@
         align-items: center;
         color: $text;
         background-color: $secondary;
-        transition: .4s;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
-            background-color: lighten($secondary, 5%);
-            border: 3px solid $text;
+            background-color: $text;
+            color: $secondary;
+            transform: scale(1.05);
         }
     
     }
@@ -55,7 +56,6 @@
         .btn {
             height: 35px;
             font-size: 0.9em;
-            padding: 0 space(2);
         }
     }
 
