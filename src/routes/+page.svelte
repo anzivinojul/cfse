@@ -16,7 +16,16 @@
 <Pricing />
 <Contact />
 
-<style global lang="scss">
-
-
-</style>
+<svelte:head>
+    <title>Confiance & Sérénité</title>
+    <meta name ="description" content="Confiance & Sérénité est une association d'aide à la personne.">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+            "name": "Confiance & Sérénité",
+            "description": "Confiance & Sérénité est une association d'aide à la personne.",
+            "url": "https://cfse.netlify.app/"
+    }
+    </script>
+</svelte:head>
