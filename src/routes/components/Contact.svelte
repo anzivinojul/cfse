@@ -15,39 +15,45 @@
                 Restez en contact
             </h3>
 
-            <div class="contact-details-top">
+            <div class="contact-details-box">
 
-                <div class="contact-details">
+                <div class="contact-details-left">
 
-                    <div class="contact-details-title">LOCALISATION</div>
-                    <div class="contact-details-content">
-                        <p>16 Avenue de Saint-Antoine</p>
-                        <p>13015 Marseille</p>
+                    <div class="contact-details">
+    
+                        <div class="contact-details-title">LOCALISATION</div>
+                        <div class="contact-details-content">
+                            <p>16 Avenue de Saint-Antoine</p>
+                            <p>13015 Marseille</p>
+                        </div>
+        
                     </div>
-
+        
+                    <div class="contact-details">
+        
+                        <div class="contact-details-title">CONTACTEZ-NOUS</div>
+                        <div class="contact-details-content">
+                            <p>Téléphone : 04 91 60 19 96</p>
+                            <p>E-mail : confiance-serenite@hotmail.com</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="contact-details">
+        
+                        <div class="contact-details-title">NOS HORAIRES</div>
+                        <div class="contact-details-content">
+                            <p>LUN-VEN 09:00 - 12:00 / 13:00 - 17:00</p>
+                        </div>
+        
+                    </div>
+    
                 </div>
 
-                <div class="contact-details">
-
-                    <div class="contact-details-title">CONTACTEZ-NOUS</div>
-                    <div class="contact-details-content">
-                        <p>Téléphone : 04 91 60 19 96</p>
-                        <p>E-mail : confiance-serenite@hotmail.com</p>
+                <div class="contact-details-right">
+                    <div class="contact-image">
+                        <img src="images/contact.svg" alt="contact" class="contact-img">
                     </div>
-
-                </div>
-
-            </div>
-
-            <div class="contact-details-bottom">
-
-                <div class="contact-details">
-
-                    <div class="contact-details-title">NOS HORAIRES</div>
-                    <div class="contact-details-content">
-                        <p>LUN-VEN 09:00 - 12:00 / 13:00 - 17:00</p>
-                    </div>
-
                 </div>
 
             </div>
@@ -90,9 +96,8 @@
             .contact-hero-right {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                gap: space(10);
-                height: auto;
+                align-self: center;
+                height: 350px;
                 flex: 1;
 
                 .contact-title {
@@ -100,30 +105,44 @@
                     font-size: 2.8em;
                     color: $text;
                     font-weight: 600;
-                    padding-left: 3vw;
                 }
 
-                .contact-details-top {
+                .contact-details-box {
                     display: flex;
-                    padding-left: 3vw;
-                    width: 95%;
-                    gap: space(8);
-                }
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 25vw;
+                    height: 100%;
 
-                .contact-details-bottom {
-                    display: flex;
-                    padding-left: 3vw;
-                    width: 90%;
-                }
+                    .contact-details-left {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 100%;
 
-                .contact-details {
-                    display: flex;
-                    flex-direction: column;
-                    gap: space(2);
-                    font-family: $font_opensans;
-                    font-size: 1em;
-                    color: $text;
-                    font-weight: 500;
+                        .contact-details {
+                            display: flex;
+                            flex-direction: column;
+                            gap: space(2);
+                            font-family: $font_opensans;
+                            font-size: 1em;
+                            color: $text;
+                            font-weight: 500;
+                        }
+
+                    }
+
+                    .contact-details-right {
+
+                        .contact-image {
+                            height: 100%;
+
+                            .contact-img {
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -145,15 +164,28 @@
                 }
 
                 .contact-hero-right {
+                    height: 350px;
                     
                     .contact-title {
+                        padding-left: 4vw;
                         font-size: 2.6em;
                     }
 
-                    .contact-details {
-                        font-size: 0.95em;
-                    }
+                    .contact-details-box {
+                        padding-left: 4vw;
 
+                        .contact-details-left {
+                            
+                            .contact-details {
+                                font-size: 0.95em;
+                            }
+
+                        }
+
+                        .contact-details-right {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -165,28 +197,25 @@
 
             .contact-hero {
                 flex-direction: column;
-                gap: space(6);
+                gap: space(5);
 
                 .contact-hero-right {
-                    align-items: center;
-                    gap: space(5);
+                    height: 300px;
+                    flex: none;
+
+                    .contact-details-box {
+                        padding-left: 0px;
+                        justify-content: center;
+                        width: 100%;
+
+                        .contact-details-left {
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
 
                     .contact-title {
                         padding-left: 0px;
-                    }
-
-                    .contact-details-top {
-                        flex-direction: column;
-                        align-items: center;
-                        padding-left: 0px;
-                        text-align: center;
-                        gap: space(5);
-                    }
-
-                    .contact-details-bottom {
-                        justify-content: center;
-                        padding-left: 0px;
-                        text-align: center;
                     }
                 }
             }
