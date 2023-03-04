@@ -79,6 +79,8 @@
 
 <style global lang="scss">
 
+    $animation-duration: .5s;
+
     .container-landing {
         width: 100%;
         height: calc(100vh - 130px);
@@ -127,6 +129,7 @@
                     .hero-img {
                         width: 35%;
                         height: auto;
+                        animation: slideInLeft $animation-duration ease-in-out both;
                     }
                 }
 
@@ -138,6 +141,8 @@
                     height: 100%;
                     padding: space(4) 0 space(4) 0;
                     gap: space(2);
+                    animation: slideInRight $animation-duration ease-in-out both;
+                    animation-delay: calc(.5s - 300ms);                    
 
                     .hero-title {
                         font-family: $font_opensans;
@@ -180,6 +185,19 @@
                         justify-content: center;
                         align-items: center;
                         gap: space(4);
+                        animation: backInUp $animation-duration ease-in-out both;
+
+                        &:nth-child(1) {
+                            animation-delay: 1s - 300ms; 
+                        }
+
+                        &:nth-child(2) {
+                            animation-delay: 1.5s - 300ms; 
+                        }
+
+                        &:nth-child(3) {
+                            animation-delay: 2s - 300ms; 
+                        }
 
                         .hero-point-title {
                             font-family: $font_montserrat;
@@ -201,6 +219,57 @@
             }
         }
 
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translate3d(-150%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translate3d(150%, 0, 0);
+            visibility: visible;
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes backInUp {
+        0% {
+            transform: translateY(1200px) scale(0.7);
+            opacity: 0;
+        }
+
+        80% {
+            transform: translateY(0px) scale(0.7);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
     @media screen and (max-width: 1500px) {

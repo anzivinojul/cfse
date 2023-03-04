@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Activites from "./components/Activites.svelte";
     import Contact from "./components/Contact.svelte";
     import Landing from "./components/Landing.svelte";
@@ -6,7 +6,20 @@
     import Pricing from "./components/Pricing.svelte";
     import Values from "./components/Values.svelte";
     import Header from "./templates/Header.svelte";
+
+    import { reveal, setDefaultOptions } from 'svelte-reveal';
+    import { afterUpdate } from 'svelte';
+
+    let show = false;
+
+    setDefaultOptions({
+        onRevealEnd: (node) => node.classList.add("no-transition")
+    })
+
+    afterUpdate(() => show = true);
 </script>
+
+{#if show}
 
 <Header />
 <Landing />
@@ -15,6 +28,8 @@
 <Values />
 <Pricing />
 <Contact />
+
+{/if}
 
 <svelte:head>
     <title>Confiance & Sérénité</title>
@@ -29,3 +44,11 @@
     }
     </script>
 </svelte:head>
+
+<style global lang="scss">
+
+    .no-transition {
+        transition: none !important;
+    }
+
+</style>

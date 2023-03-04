@@ -9,14 +9,14 @@
 
         <div class="values-list">
 
-            <div class="values-card">
+            <div class="values-card" use:reveal={{ transition : "fly", duration : 500 }}>
 
-                <img src="images/listening.svg" alt="listening" class="values-img">
                 <h3 class="values-text">Écoute</h3>
+                <img src="images/listening.svg" alt="listening" class="values-img">
     
             </div>
     
-            <div class="values-card">
+            <div class="values-card" use:reveal={{ transition : "fly", duration : 500, delay: 300 }}>
     
                 <img src="images/excellence.svg" alt="excellence" class="values-img">
                 <h3 class="values-text">Excellence</h3>
@@ -26,14 +26,14 @@
         </div>
         <div class="values-list">
     
-            <div class="values-card">
+            <div class="values-card" use:reveal={{ transition : "fly", duration : 500, delay: 600 }}>
     
-                <img src="images/skillful.svg" alt="skillful" class="values-img">
                 <h3 class="values-text">Compétents</h3>
+                <img src="images/skillful.svg" alt="skillful" class="values-img">
     
             </div>
     
-            <div class="values-card">
+            <div class="values-card" use:reveal={{ transition : "fly", duration : 500, delay: 900 }}>
     
                 <img src="images/reactivity.svg" alt="reactivity" class="values-img">
                 <h3 class="values-text">Réactivité</h3>
@@ -92,13 +92,15 @@
 
                 .values-card {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     align-items: center;
-                    gap: space(1);
+                    justify-content: space-around;
+                    gap: space(2);
+                    width: 30vw;
 
                     .values-img {
                         height: auto;
-                        width: 100%;
+                        width: 50%;
                         min-width: 250px;
                     }
 
@@ -160,7 +162,15 @@
 
                 .values-list {
 
+                    flex-direction: column;
+                    gap: 0px;
+
                     .values-card {
+                        width: 50vw;
+
+                        &:nth-child(2n+1) {
+                            flex-direction: row-reverse;
+                        }
 
                         .values-text {
                             font-size: 1.4em;
@@ -187,13 +197,8 @@
             .values-hero {
 
                 .values-list {
-                    gap: 0px;
 
                     .values-card {
-
-                        .values-img {
-                            min-width: 40vw;
-                        }
 
                         .values-text {
                             font-size: 1.2em;
@@ -258,3 +263,13 @@
     }
     
 </style>
+
+<script lang="ts">
+    import { reveal } from 'svelte-reveal';
+
+    import { afterUpdate } from 'svelte';
+
+    let show = false;
+
+    afterUpdate(() => show = true);
+</script>

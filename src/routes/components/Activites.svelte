@@ -7,7 +7,7 @@
 
     <div class="activities-list">
 
-        <div class="activities-card">
+        <div class="activities-card" use:reveal={{ transition : "fly", duration : 500 }}>
 
             <img src="images/activities-washing.png" alt="activité" class="activities-img">
 
@@ -15,7 +15,7 @@
 
         </div>
 
-        <div class="activities-card">
+        <div class="activities-card" use:reveal={{ transition : "fly", duration : 500, delay: 300 }}>
 
             <img src="images/activities-nursing.png" alt="activité" class="activities-img">
 
@@ -23,7 +23,7 @@
 
         </div>
 
-        <div class="activities-card">
+        <div class="activities-card" use:reveal={{ transition : "fly", duration : 500, delay: 600 }}>
 
             <img src="images/activities-gardening.png" alt="activité" class="activities-img">
 
@@ -224,3 +224,13 @@
     }
 
 </style>
+
+<script lang="ts">
+    import { reveal } from 'svelte-reveal';
+
+    import { afterUpdate } from 'svelte';
+
+    let show = false;
+
+    afterUpdate(() => show = true);
+</script>

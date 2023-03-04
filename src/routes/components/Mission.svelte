@@ -7,13 +7,13 @@
 
     <div class="mission-hero">
 
-        <div class="mission-hero-left">
+        <div class="mission-hero-left" use:reveal={{ transition : "fly", duration : 500 }}>
 
             <img src="images/mission.svg" alt="mission" class="mission-img">
 
         </div>
 
-        <div class="mission-hero-right">
+        <div class="mission-hero-right" use:reveal={{ transition : "blur", duration : 500, delay: 300 }}>
 
             <div class="mission-text">
 
@@ -43,7 +43,6 @@
             </div>
 
         </div>
-
 
     </div>
 
@@ -259,3 +258,7 @@
     }
 
 </style>
+
+<script lang="ts">
+    import { reveal } from 'svelte-reveal';
+</script>
