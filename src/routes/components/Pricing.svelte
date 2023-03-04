@@ -7,13 +7,13 @@
 
     <div class="pricing-hero">
 
-        <div class="pricing-hero-top">
+        <div class="pricing-hero-top" use:reveal={{ transition : "fly", duration : 300 }}>
 
             <img src="/images/pricing.png" alt="pricing" class="pricing-img">
 
         </div>
 
-        <div class="pricing-hero-bottom">
+        <div class="pricing-hero-bottom" use:reveal={{ transition : "blur", duration : 300 }}>
 
             <div class="pricing-text">
     
@@ -49,44 +49,44 @@
     <div class="pricing-advantages-text">
 
         <div class="pricing-advantages-text-wrapper">
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Il existe différentes aides fiscales pour les personnes bénéficiant de services d’aides à domicile :
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Le crédit d’impôt permet de bénéficier d’un remboursement lorsque le montant du crédit d’impôt est
                 supérieur à l’impôt à payer, les personnes non imposables peuvent en bénéficier.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 La réduction d’impôt permet uniquement de diminuer voir d’annuler l’impôt, par conséquent les personnes
                 non imposables ne peuvent pas en bénéficier.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Dans le cadre des prestations de services proposées par CONFIANCE & SERENITE vous pouvez bénéficier d’un
                 crédit d’impôt égal à 50% des dépenses annuelles engagées.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Exemple : vous payez 6000€ d’aide à domicile en 2022. Vous pourrez bénéficier d’un crédit d’impôt de 3000€ (50%
                 de 6000€) sur vos impôts en 2023.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Pour rappel les prestations vous donnant droit à un crédit d’impôt sont :
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 - L’aide dans les acte de la vie quotidienne.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 - L’entretien de la maison et les travaux ménagers.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Les montants sont plafonnés (12 000€ majoré de 1 500€ par personne de + de 65 ans au sein du foyer et
                 plafonnée à 20 000€ si la personne titulaire de la carte d’invalidité ou mobilité inclusion invalidité ou si la
                 personne perçoit une pension d’invalidité de cat 3).
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 Vous bénéficier de l’APA ou de la PCH dans ce cas le crédit d’impôt s’appliquera sur le montant égal à la
                 différence entre le montant de la facture et le montant de l’aide perçue.
             </p><br>
-            <p>
+            <p use:reveal={{ transition : "blur", duration : 500, delay: 200}}>
                 <a href="https://www.impots.gouv.fr/particulier/emploi-domicile" target="_blank" rel="noreferrer">https://www.impots.gouv.fr/particulier/emploi-domicile</a> 
             </p>
         </div>
@@ -289,7 +289,7 @@
 
     @media screen and (max-width: $m) {
 
-        .container-activities {
+        .container-pricing {
 
             .pricing-title {
 
@@ -315,3 +315,7 @@
         }
     }
 </style>
+
+<script lang="ts">
+    import { reveal } from 'svelte-reveal';
+</script>

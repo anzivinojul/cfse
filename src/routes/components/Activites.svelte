@@ -227,10 +227,4 @@
 
 <script lang="ts">
     import { reveal } from 'svelte-reveal';
-
-    import { afterUpdate } from 'svelte';
-
-    let show = false;
-
-    afterUpdate(() => show = true);
 </script>

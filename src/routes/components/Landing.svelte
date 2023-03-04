@@ -263,7 +263,12 @@
 
         80% {
             transform: translateY(0px) scale(0.7);
-            opacity: 0.7;
+            opacity: 0.2;
+        }
+
+        80% {
+            transform: translateY(0px) scale(0.7);
+            opacity: 0.6;
         }
 
         100% {
@@ -546,9 +551,5 @@
 </style>
 
 <script lang=ts>
-
     import Button from '../templates/Button.svelte';
-    import { Parallax, ParallaxLayer } from 'svelte-parallax'
-
-
 </script>

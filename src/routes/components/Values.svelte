@@ -26,14 +26,14 @@
         </div>
         <div class="values-list">
     
-            <div class="values-card" use:reveal={{ transition : "fly", duration : 500, delay: 600 }}>
+            <div class="values-card" use:reveal={{ transition : "fly", duration : 500 }}>
     
                 <h3 class="values-text">Compétents</h3>
                 <img src="images/skillful.svg" alt="skillful" class="values-img">
     
             </div>
     
-            <div class="values-card" use:reveal={{ transition : "fly", duration : 500, delay: 900 }}>
+            <div class="values-card" use:reveal={{ transition : "fly", duration : 500, delay: 300 }}>
     
                 <img src="images/reactivity.svg" alt="reactivity" class="values-img">
                 <h3 class="values-text">Réactivité</h3>
@@ -174,6 +174,7 @@
 
                         .values-text {
                             font-size: 1.4em;
+                            padding-right: space(5);
                         }
                     }
                 }
@@ -187,7 +188,6 @@
 
             padding-top: 70px;
 
-
             .values-title {
 
                 font-size: 2em;
@@ -199,6 +199,7 @@
                 .values-list {
 
                     .values-card {
+                        width: 70vw;
 
                         .values-text {
                             font-size: 1.2em;
@@ -212,7 +213,7 @@
 
     @media screen and (max-width: $m) {
 
-        .container-activities {
+        .container-values {
 
             .values-title {
 
@@ -225,6 +226,7 @@
                 .values-list {
 
                     .values-card {
+                        width: 90vw;
 
                         .values-text {
                             font-size: 1.1em;
@@ -238,7 +240,7 @@
 
     @media screen and (max-width: $s) {
 
-        .container-activities {
+        .container-values {
 
             .values-title {
 
@@ -266,10 +268,4 @@
 
 <script lang="ts">
     import { reveal } from 'svelte-reveal';
-
-    import { afterUpdate } from 'svelte';
-
-    let show = false;
-
-    afterUpdate(() => show = true);
 </script>

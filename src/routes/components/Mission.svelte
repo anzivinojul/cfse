@@ -7,32 +7,32 @@
 
     <div class="mission-hero">
 
-        <div class="mission-hero-left" use:reveal={{ transition : "fly", duration : 500 }}>
+        <div class="mission-hero-left" id="mission-hero-left" use:reveal={{ transition : "fly", duration : 500, threshold : 0.1 }}>
 
             <img src="images/mission.svg" alt="mission" class="mission-img">
 
         </div>
 
-        <div class="mission-hero-right" use:reveal={{ transition : "blur", duration : 500, delay: 300 }}>
+        <div class="mission-hero-right">
 
             <div class="mission-text">
 
                 <div class="mission-text-wrapper">
-                    <p>
+                    <p use:reveal={{ transition : "blur", duration : 500 }}>
                         L’association est née d’une volonté commune d’évoluer professionnellement vers des activités 
                         en accord avec nos valeurs que sont notamment le sens du service et la solidarité.
                     </p><br>
-                    <p>
+                    <p use:reveal={{ transition : "blur", duration : 500 }}>
                         Nous avons à cœur de travailler pour le bien-être de toute personne qu’elles soient vulnérables, 
                         dépendantes ou en situation de handicap. Notre mission étant de répondre au mieux à leur besoins actuels et à venir.
                     </p><br>
-                    <p>
+                    <p use:reveal={{ transition : "blur", duration : 500 }}>
                         Nos collaborateurs sont soigneusement recrutés et nous attachons une attention particulière à leur compétence professionnelles, 
                         leur expérience tout autant qu’à leur qualités humaines telle que l’écoute et la bienveillance.
                         En phase de recrutement, nous vérifions leurs références, nous veillons à ce que chacun participe au respect de la vie privée de nos bénéficiaires
                             en faisant preuve de réserve et de discrétion.
                     </p><br>
-                    <p>
+                    <p use:reveal={{ transition : "blur", duration : 500 }}>
                         Des réunions ou entretiens réguliers nous permettent d’évaluer en continu les besoins des bénéficiaires et de procéder à des ajustements.
                         Notre coordinatrice Amel forte d’une expérience d’une vingtaine d’années dans le secteur sanitaire et 
                         social se rendra au domicile des bénéficiaires pour évaluer avec eux leurs besoins. Elle assurera la coordination 
