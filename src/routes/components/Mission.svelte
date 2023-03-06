@@ -61,7 +61,7 @@
         .mission-title {
 
             font-family: $font_opensans;
-            font-size: 2.8em;
+            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
             color: $text;
             padding-top: 2vh;
             padding-left: 4vw;
@@ -112,7 +112,7 @@
                         align-self: center;
                         font-family: $font_montserrat;
                         font-weight: 400;
-                        font-size: 1.1em;
+                        font-size: clamp(0.9rem, 1.5vw, 1.1rem);
                         color: $text;
                         height: 80%;
                     }
@@ -125,10 +125,6 @@
     @media screen and (max-width: 1500px) {
 
         .container-mission {
-
-            .mission-title {
-                font-size: 2.4em;
-            }
 
             .mission-hero {
 
@@ -156,12 +152,6 @@
             height: auto;
             padding-top: 100px;
 
-            .mission-title {
-
-                font-size: 2.2em;
-
-            }
-
             .mission-hero {
 
                 .mission-hero-left {
@@ -174,13 +164,6 @@
 
                 .mission-hero-right {
                     padding: space(10) 0 space(10) 0;
-
-                    .mission-text {
-
-                        .mission-text-wrapper {
-                            font-size: 1em;
-                        }
-                    }
                 }
             }
 
@@ -192,13 +175,6 @@
         .container-mission {
 
             padding-top: 70px;
-
-
-            .mission-title {
-
-                font-size: 2em;
-
-            }
 
             .mission-hero {
                 flex-direction: column;
@@ -213,13 +189,6 @@
 
                 .mission-hero-right {
                     padding: 0 0 space(10) 0;
-
-                    .mission-text {
-
-                        .mission-text-wrapper {
-                            font-size: 0.9em;
-                        }
-                    }
                 }
             }
         }
@@ -229,28 +198,12 @@
 
         .container-activities {
 
-            .mission-title {
-
-                font-size: 1.8em;
-
-            }
-
             .mission-hero {
 
                 .mission-hero-left {
 
                     .mission-img {
                         min-width: 200px;
-                    }
-                }
-
-                .mission-hero-right {
-
-                    .mission-text {
-
-                        .mission-text-wrapper {
-                            font-size: 0.9em;
-                        }
                     }
                 }
             }
