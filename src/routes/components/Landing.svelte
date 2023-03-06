@@ -146,14 +146,14 @@
 
                     .hero-title {
                         font-family: $font_opensans;
-                        font-size: 3.4em;
+                        font-size: clamp(1.8rem, 3vw, 3.4rem);
                         font-weight: 800;
                         color: $background; 
                     }
 
                     .hero-description {
                         font-family: $font_opensans;
-                        font-size: 1em;
+                        font-size: clamp(0.85rem, 0.9vw, 1rem);
                         font-weight: 400;
                         width: 70%;
                         color: $background;
@@ -201,7 +201,7 @@
 
                         .hero-point-title {
                             font-family: $font_montserrat;
-                            font-size: 1.6em;
+                            font-size: clamp(1rem, 1.6vw, 1.6em);
                             font-weight: bold;
                             color: $text;
                         }
@@ -209,7 +209,7 @@
                         .hero-point-text {
                             width: 80%;
                             font-family: $font_montserrat;
-                            font-size: 1em;
+                            font-size: clamp(0.75rem, 1.3vw, 1rem);
                             font-weight: bold;
                             text-align: center;
                             color: $text;
@@ -296,12 +296,7 @@
                     .container-hero-top-right {
                         flex: 2;
 
-                        .hero-title {
-                            font-size: 2.8em;
-                        }
-
                         .hero-description {
-                            font-size: 1em;
                             width: 80%;
                         }
                     }
@@ -350,33 +345,12 @@
                         flex: 2;
                         justify-content: space-evenly;
 
-                        .hero-title {
-                            font-size: 2.2em;
-                        }
-
                         .hero-description {
-                            font-size: 0.9em;
                             width: 90%;
                         }
                     }
                 }
 
-                .container-hero-bottom {
-                    
-                    .container-hero-points {
-
-                        .hero-point {
-
-                            .hero-point-title {
-                                font-size: 1.4em;
-                            }
-
-                            .hero-point-text {
-                                font-size: 0.9em;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
@@ -403,31 +377,8 @@
                         }
                     }
 
-                    .container-hero-top-right {
-
-                        .hero-title {
-                            font-size: 1.8em;
-                        }
-
-                    }
                 }
 
-                .container-hero-bottom {
-                    
-                    .container-hero-points {
-
-                        .hero-point {
-
-                            .hero-point-title {
-                                font-size: 1.2em;
-                            }
-
-                            .hero-point-text {
-                                font-size: 0.9em;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
@@ -472,14 +423,6 @@
 
                         .hero-point {
                             gap: space(1);
-
-                            .hero-point-title {
-                                font-size: 1.1em;
-                            }
-
-                            .hero-point-text {
-                                font-size: 0.8em;
-                            }
                         }
                     }
                 }
@@ -504,28 +447,7 @@
 
                     .container-hero-top-right {
                         padding: 0;
-
-                        .hero-description {
-                            font-size: 0.85em;
-                        }
                         
-                    }
-                }
-
-                .container-hero-bottom {
-                    
-                    .container-hero-points {
-
-                        .hero-point {
-
-                            .hero-point-title {
-                                font-size: 1em;
-                            }
-
-                            .hero-point-text {
-                                font-size: 0.75em;
-                            }
-                        }
                     }
                 }
             }

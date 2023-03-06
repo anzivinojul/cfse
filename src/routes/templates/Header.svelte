@@ -80,7 +80,7 @@
                 align-items: center;
                 gap: space(5);
                 font-family: $font-opensans;
-                font-size: 1.15em;
+                font-size: 1.15rem;
                 font-weight: bold;
                 color: $background;
 
@@ -130,8 +130,8 @@
                 gap: space(3);
 
                 .list-right-header {
-                    gap: space(3);
-                    font-size: 1.05em;
+                    gap: space(2.5);
+                    font-size: 1rem;
                 }
             }
         }
