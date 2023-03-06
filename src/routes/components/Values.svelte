@@ -59,7 +59,7 @@
         .values-title {
 
             font-family: $font_opensans;
-            font-size: 2.8em;
+            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
             color: $text;
             padding-top: 2vh;
             padding-left: 4vw;
@@ -107,7 +107,7 @@
                     .values-text {
                         font-family: $font_montserrat;
                         font-weight: bold;
-                        font-size: 1.8em;
+                        font-size: clamp(1.1rem, 2.4vw, 1.8rem);
                         color: $text;
                     }
                 }
@@ -125,10 +125,6 @@
             min-height: auto;
             padding-top: 100px;
 
-            .values-title {
-                font-size: 2.4em;
-            }
-
             .values-hero {
 
                 .values-list {
@@ -137,10 +133,6 @@
                         
                         .values-img {
                             min-width: 230px;
-                        }
-
-                        .values-text {
-                            font-size: 1.6em;
                         }
                     }
                 }
@@ -151,12 +143,6 @@
     @media screen and (max-width: $xxl) {
 
         .container-values {
-
-            .values-title {
-
-                font-size: 2.2em;
-
-            }
 
             .values-hero {
 
@@ -172,8 +158,12 @@
                             flex-direction: row-reverse;
                         }
 
+                        .values-img {
+                            width: 30%;
+                            min-width: 200px;
+                        }
+
                         .values-text {
-                            font-size: 1.4em;
                             padding-right: space(5);
                         }
                     }
@@ -188,22 +178,12 @@
 
             padding-top: 70px;
 
-            .values-title {
-
-                font-size: 2em;
-
-            }
-
             .values-hero {
 
                 .values-list {
 
                     .values-card {
                         width: 70vw;
-
-                        .values-text {
-                            font-size: 1.2em;
-                        }
                     }
                 }
             }
@@ -215,12 +195,6 @@
 
         .container-values {
 
-            .values-title {
-
-                font-size: 1.8em;
-
-            }
-
             .values-hero {
 
                 .values-list {
@@ -228,34 +202,9 @@
                     .values-card {
                         width: 90vw;
 
-                        .values-text {
-                            font-size: 1.1em;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-
-    @media screen and (max-width: $s) {
-
-        .container-values {
-
-            .values-title {
-
-                font-size: 1.8em;
-
-            }
-
-            .values-hero {
-
-                .values-list {
-
-                    .values-card {
-
-                        .values-text {
-                            font-size: 1.1em;
+                        .values-img {
+                            min-width: 180px;
+                            width: 180px;
                         }
                     }
                 }
