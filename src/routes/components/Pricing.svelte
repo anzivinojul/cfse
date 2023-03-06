@@ -107,7 +107,7 @@
         .pricing-title {
 
             font-family: $font_opensans;
-            font-size: 2.8em;
+            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
             color: $text;
             padding-top: 2vh;
             padding-left: 4vw;
@@ -147,7 +147,7 @@
                 .pricing-text {
                     font-family: $font_montserrat;
                     font-weight: 400;
-                    font-size: 1em;
+                    font-size: clamp(0.85rem, 1.6vw, 1rem);
                     color: $text;
                     line-height: 16pt;
 
@@ -169,7 +169,7 @@
 
         .pricing-advantages-title {
             font-family: $font_opensans;
-            font-size: 2.8em;
+            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
             color: $text;
             font-weight: 600;
             padding-left: 4vw;
@@ -186,7 +186,7 @@
                 align-self: center;
                 font-family: $font_montserrat;
                 font-weight: 400;
-                font-size: 1.1em;
+                font-size: clamp(0.9rem, 1.6vw, 1.1rem);
                 color: $text;
             }
         }
@@ -199,17 +199,9 @@
             min-height: auto;
             padding-top: 100px;
 
-            .pricing-title {
-                font-size: 2.4em;
-            }
-
         }
 
         .container-pricing-advantages {
-
-            .pricing-advantages-title {
-                font-size: 2.4em;
-            }
 
             .pricing-advantages-text {
                 width: 90vw;
@@ -221,30 +213,10 @@
 
         .container-pricing {
 
-            .pricing-title {
-
-                font-size: 2.2em;
-
-            }
-
             .pricing-hero {
                 width: 80%;
             }
 
-        }
-
-        .container-pricing-advantages {
-
-            .pricing-advantages-title {
-                font-size: 2.2em;
-            }
-
-            .pricing-advantages-text {
-
-                .pricing-advantages-text-wrapper {
-                    font-size: 1em;
-                }
-            }
         }
     }
 
@@ -254,66 +226,12 @@
 
             padding-top: 70px;
 
-            .pricing-title {
-
-                font-size: 2em;
-
-            }
-
             .pricing-hero {
                 width: 90%;
-
-                .pricing-hero-bottom {
-
-                    .pricing-text {
-                        font-size: 0.9em;
-                    }
-                }
-            }
-        }
-
-        .container-pricing-advantages {
-
-            .pricing-advantages-title {
-                font-size: 2em;
-            }
-
-            .pricing-advantages-text {
-                
-                .pricing-advantages-text-wrapper {
-                    font-size: 0.9em;
-                }
             }
         }
     }
 
-    @media screen and (max-width: $m) {
-
-        .container-pricing {
-
-            .pricing-title {
-
-                font-size: 1.8em;
-
-            }
-
-        }
-
-        .container-pricing-advantages {
-
-            .pricing-advantages-title {
-                font-size: 1.8em;
-            }
-
-            .pricing-advantages-text {
-
-                .pricing-advantages-text-wrapper {
-                    font-size: 0.9em;
-                }
-
-            }
-        }
-    }
 </style>
 
 <script lang="ts">
