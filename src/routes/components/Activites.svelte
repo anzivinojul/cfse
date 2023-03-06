@@ -48,7 +48,7 @@
         .activities-title {
 
             font-family: $font_opensans;
-            font-size: 2.8em;
+            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
             color: $text;
             padding-top: 2vh;
             padding-left: 4vw;
@@ -86,35 +86,11 @@
                 .activities-text {
                     font-family: $font_montserrat;
                     font-weight: bold;
-                    font-size: 1.5em;
+                    font-size: clamp(0.9rem, 1.8vw, 1.5rem);
                     color: $text;
                     text-align: center;
                 }
             }
-        }
-
-    }
-
-    @media screen and (max-width: 1500px) {
-
-        .container-activities {
-
-            .activities-title {
-
-                font-size: 2.4em;
-
-            }
-
-            .activities-list {
-
-                .activities-card {
-
-                    .activities-text {
-                        font-size: 1.3em;
-                    }
-                }
-            }
-
         }
 
     }
@@ -125,12 +101,6 @@
 
             height: auto;
             padding-top: 100px;
-
-            .activities-title {
-
-                font-size: 2.2em;
-
-            }
 
             .activities-list {
                 flex-direction: column;
@@ -154,7 +124,6 @@
                         justify-self: center;
                         padding: 0 space(4) 0 space(4);
                         width: 80%;
-                        font-size: 1.3em;
                         text-align: start;
                     }
                 }
@@ -168,13 +137,6 @@
 
             padding-top: 70px;
 
-
-            .activities-title {
-
-                font-size: 2em;
-
-            }
-
             .activities-list {
 
                 .activities-card {
@@ -187,7 +149,6 @@
 
                     .activities-text {
                         padding: 0 space(2) 0 space(2);
-                        font-size: 1.1em;
                     }
                 }
             }
@@ -197,12 +158,6 @@
     @media screen and (max-width: $m) {
 
         .container-activities {
-
-            .activities-title {
-
-                font-size: 1.8em;
-
-            }
 
             .activities-list {
 
@@ -216,7 +171,6 @@
 
                     .activities-text {
                         padding: 0 space(1) 0 space(1);
-                        font-size: 0.9em;
                     }
                 }
             }
