@@ -98,6 +98,7 @@
                 flex-direction: column;
                 align-self: center;
                 height: 350px;
+                width: auto;
                 flex: 1;
 
                 .contact-title {
@@ -111,7 +112,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    width: 25vw;
+                    width: 100%;
                     height: 100%;
 
                     .contact-details-left {
@@ -119,6 +120,7 @@
                         flex-direction: column;
                         justify-content: space-around;
                         height: 100%;
+                        flex: 1;
 
                         .contact-details {
                             display: flex;
@@ -133,8 +135,13 @@
                     }
 
                     .contact-details-right {
+                        display: flex;
+                        flex: 1;
 
                         .contact-image {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
                             height: 100%;
 
                             .contact-img {
