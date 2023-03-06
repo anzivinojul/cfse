@@ -118,7 +118,6 @@
                 display: flex;
                 flex-direction: row;
                 flex: 6;
-                transition: .4s ease;
 
                 .container-hero-top-left {
                     display: flex;
@@ -146,7 +145,7 @@
 
                     .hero-title {
                         font-family: $font_opensans;
-                        font-size: clamp(1.8rem, 3vw, 3.4rem);
+                        font-size: clamp(1.6rem, 4.4vw, 3.4rem);
                         font-weight: 800;
                         color: $background; 
                     }

@@ -61,7 +61,7 @@
         .mission-title {
 
             font-family: $font_opensans;
-            font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+            font-size: clamp(1.6rem, 3.8vw, 2.8rem);
             color: $text;
             padding-top: 2vh;
             padding-left: 4vw;
